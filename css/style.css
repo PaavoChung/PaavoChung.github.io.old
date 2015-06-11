@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*公用文件*/
+*{ margin:0; padding:0; list-style:none;}
+a{ color:#fff; text-decoration: none; }
+body{ background:url(../img/bg6.jpg) no-repeat; background-attachment:fixed; background-size:cover;background-position:center;font-family: 'Open Sans','helvetica',arial,sans-serif; font-weight:300; color:#62686f;}
+h1,h2,h3,h4,h5,h6{ color:#333;font-weight:300;}
+/*内容部分*/
+.container{ width:960px; margin:0 auto;}
+.main-header__avatar{
+-moz-transition: all 0.8s ease-in-out;-webkit-transition: all 0.8s ease-in-out;-o-transition: all 0.8s ease-in-out;-ms-transition: all 0.8s ease-in-out;transition: all 0.8s ease-in-out;
+}
+.main-header__avatar:hover{
+-moz-transform: rotate(360deg);-webkit-transform: rotate(360deg);-o-transform: rotate(360deg);-ms-transform: rotate(360deg);transform: rotate(360deg);
+}
+
+.main-header{ width:960px; height:105px; background:url(../img/banner.jpg) no-repeat; margin:100px auto 0px;background-size:cover; background-position:50% 50%; position:relative; padding-top:40px; padding-bottom:20px;}
+.main-header h1{ display:block; text-align:center; font-weight:300; font-size: 50px; font-family: 'Open Sans','helvetica',arial,sans-serif; text-shadow: 0 1px rgba(0,0,0,0.3); color:#fff; margin-bottom:20px;}
+.main-header__avatar{ width:130px; height:130px; display:block; margin:0 auto; 
+border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;-o-border-radius:50%;-ms-border-radius:50%; box-shadow: 0px 0px 0px 5px rgba(255,255,255,1),0px 0px 2px 6px rgba(0,0,0,0.3);position:absolute; top:-70px; left:50%; margin-left:-65px; overflow:hidden;}
+.main-nav{ width:960px; height:40px;  margin:0 auto; background:#333; line-height:40px;}
+.main-nav-move{ position:fixed; top:0; left:50%; margin-left:-480px; z-index:999;}
+.main-nav ul{ width:420px;text-align:center; margin:0 auto; position:relative;}
+.main-nav ul li{ width:80px; display:inline-block;  font-size: 16px; text-align:center;}
+
+.main-nav .float{ display: block; position: absolute ; width: 40px; height: 2px; margin:0 63px;bottom: 6px; background:#fff;}
+
+.main-nav ul li a{ color:#fff; font-weight:300;}
+
+.info-section{ background-color: #fff; padding:50px 60px 10px; border-bottom:1px solid #ccc;}
+.info-section h2{ text-align:center; font-size:28px; text-transform:uppercase; letter-spacing:3px;}
+.info-section h2:after{ content:""; display:block; width:8%;border-bottom: 3px solid black; margin:10px auto;}
+.info-section__description{ font-style: italic; margin-top:20px;}
+.info-section header{ margin-bottom:60px; text-align:center; }
+
+.whatido{ height:auto; overflow:hidden;}
+.whatido__skill--code,.whatido__skill--design,.whatido__skill--product{ height:100px; background-position: center top; background-repeat:no-repeat;}
+.whatido__skill--code{ background-image:url(../img/skill-code.png);}
+.whatido__skill--design{ background-image:url(../img/skill-design.png);}
+.whatido__skill--product{ background-image:url(../img/skill-product.png);}
+.whatido__skill{ height:150px; width:33.3%; float:left; text-align:center; padding-top:130px;}
+.whatido__skill p{ margin-top:20px;padding:0 10px;}
+.education-experience__list li{ display:inline-block; padding:30px 0;}
+.education-experience__list img{width:180px; height:180px; float:left;}
+.education-experience__list .Strikingly, .education-experience__list .Rocket, .education-experience__list .University{}
+.education-experience__list__description{ overflow:hidden; float:left; width:580px; margin-left:60px; margin-top:30px;} 
+.education-experience__list__description h3{}
+.education-experience__title{ margin:16px 0; font-weight:bold;}
+.photos__list{ width:840px; height:auto;}
+.photos{overflow:hidden;}
+.photos__list li{ }
+.photos__list_img{box-sizing:border-box; width:25%; float:left; padding:10px;}
+.photos__list_img img{ width:100%; cursor: pointer; }
+.get-in-touch__list{ text-align:center;}
+.get-in-touch__list li{ display:inline-block; margin:0 10px;}
+.get-in-touch__list li p{ margin-top:20px;}
+
+.wechat:hover:after{ content:""; display:block; width:160px; height:160px; background:url(../img/qr-code.png) no-repeat; position:absolute;}
+
+.form{ width:300px; height:360px; margin:0 auto; text-align:center; z-index:1;}
+.input{ margin-bottom:20px; position:relative;}
+#name,#email,#message{ width:300px; padding:10px; resize:none; border-radius:2px; border:none; border:1px solid #ccc;}
+.outside{ margin-right:20px; width:200px; position:absolute; right:100%;text-align:right; margin-top:15px;}
+.input_button{ width:300px; height:36px; border-radius:999px; border:none; background:#FF7A7C; color:#fff;}
+.ft{ width:100%; text-align:center;}
+
+/*返回顶部*/
+	
+	#gototop {
+		width: 34px;
+		height: 34px;
+		position: fixed;
+		bottom: 33px;
+		right: -40px;
+		z-index: 9999;
+		-moz-transition: all 1s ease;
+		-webkit-transition: all 1s ease;
+		-o-transition: all 1s ease;
+		transition: all 1s ease;
+		
+	}
+	#gototop.show{
+		right:20px;
+		/* Firefox */
+		-moz-transform: scale(1) rotate(-360deg) translate(0px);
+		/* WebKit */
+		-webkit-transform: scale(1) rotate(-360deg) translate(0px);
+		/* Opera */
+		-o-transform: scale(1) rotate(-360deg) translate(0px);
+		/* Standard */
+		transform: scale(1) rotate(-360deg) translate(0px);
+	}							
+	#gototop .btn{ width:34px; height:34px; background:url(../img/top_button.png) no-repeat 0 0; }
+	#gototop .btn:hover{ background-position: left bottom; }
+
+
+	/*移动设备css样式*/
+	@media only screen and (max-width : 480px){
+		body{ width:100%; height:auto;}
+		.container,.main-header,.main-nav{ width:100%;}
+		.main-nav,.main-nav-move{ display:block;}
+		.main-nav ul{ width:100%;}
+		.main-nav ul li{ width:20%; margin:0;}
+		.main-nav .float{ display:none;}
+		.main-nav-move{width:100%; margin:0 auto; position:fixed; left:0; top:0;}
+		.main-header h1{ font-size:32px; margin-top:50px;}
+		.whatido{ height:auto;}
+		.info-section{ padding:50px 20px 0px;} 
+		.whatido__skill{ margin-bottom:30px; width:100%;}
+		.education-experience__list li{ width:100%; padding:20px 0px; }
+		.education-experience__list li img{display:block; float:none; margin:0px auto;}
+		.education-experience__list__description{ width:100%; padding:20px 0; margin:0;}
+		.photos{ height:auto;}
+		.photos__list{ width:auto; height:auto;overflow:hidden; }
+		.photos__list li{width:100%; }
+		.photos__list_img{ width:100%;}
+		.get-in-touch__list li{ margin:0; padding:10px 0;}
+		.get-in-touch__list .wechat img{content:url(../img/qr-code.png)}
+		.wechat:hover:after{ display:none;}
+		.outside{ position:static;}
+		#name, #email, #message,.input_button,.form{ width:260px;}
+		}

@@ -1,0 +1,197 @@
+<!--
+HTML5. Use tags like <article>, <section>, etc.
+See: http://www.sitepoint.com/web-foundations/doctypes/
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--
+    Ask IE to behave like a modern browser  请使用现代的浏览器
+    See: https://www.modern.ie/en-us/performance/how-to-use-x-ua-compatible
+    -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Paavo</title>
+
+    <!--
+    Disables zooming on mobile devices.在移动设备上禁止缩放
+    -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!--
+    Stylesheet that minimizes browser differences. normalize样式表
+    See: http://necolas.github.io/normalize.css/
+    -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!--
+    Our own stylesheet. 自己的样式表
+    -->
+    <link rel="shortcut icon" href=" favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="jq/jquery-1.7.2.min.js"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+  </head>
+  <body>
+
+    <div class="container">
+      <header class="main-header">
+       <img class="main-header__avatar" src="img/paavo.png" alt="">
+       <div class="main_h1"><h1>Hi, I'm Paavo</h1></div>
+      </header>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">工作</a></li>
+          <li><a href="#education-experience">经验</a></li>
+          <li><a href="#photos">照片</a></li>
+          <li><a href="#touch">联系</a></li>
+          <span class="float"></span>
+        </ul>
+      </nav>
+
+      <section class="info-section whatido">
+        <header>
+          <h2>我能做什么</h2>
+          <p class="info-section__description">我是Paavo.我喜欢设计一些东西，并把它做出来例如网站等. Oh, and I like this.</p>
+        </header>
+        <ul class="whatido__skill-list">
+          <li class="whatido__skill whatido__skill--code">
+            <h3>Code</h3>
+            <p>我喜欢写一些小东西，比如小动画之类的</p>
+          </li>
+          <li class="whatido__skill whatido__skill--design">
+            <h3>Design</h3>
+            <p>我喜欢捣鼓PhotoShop，弄一些好看的设计，比如主题或者网站的icon等等</p>
+          </li>
+          <li class="whatido__skill whatido__skill--product">
+            <h3>Product</h3>
+            <p>我享受让一个产品，从想法到实现的过程，让它满足并超越用户的需求</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="info-section education-experience" id="education-experience">
+        <header>
+          <h2>教育<span>&amp;</span>经历</h2>
+        </header>
+        <ul class="education-experience__list">
+          <li>
+            <img class="Strikingly" src="img/strikingly-logo.png" alt="Strikingly">
+            <div class="education-experience__list__description">
+              <h3>成就</h3>
+              <p class="education-experience__title">2015-06 -- 至今</p>
+              <p class="education-experience__description">期待与您的合作，创造出非凡的东西</p>
+            </div>
+          </li>
+          <li>
+            <img class="Rocket" src="img/echo-rocket.png" alt="Echo Rocket">
+             <div class="education-experience__list__description">
+            <h3>自由Web前端开发</h3>
+            <p class="education-experience__title">2014.07 -- 2015-06</p>
+            <p class="education-experience__description">这期间自由的开发和设计了一些东西，巩固了我Web前端开发的基础，使我对这个Web前端有了更深的认识</p>
+            </div>
+          </li>
+          <li>
+            <img class="University" src="img/u-of-chicago.png" alt="">
+             <div class="education-experience__list__description">
+            <h3>广东机电职业技术学院</h3>
+            <p class="education-experience__title">移动应用软件开发2012-2015</p>
+            <p class="education-experience__description">学习移动应用开发（安卓方向），网页设计，平面设计等等</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="info-section photos" id="photos">
+        <header>
+          <h2>照片</h2>
+          <p class="info-section__description">一些关于我的工作和生活的照片</p>
+        </header>
+        <ul class="photos__list">
+          <li  class="photos__list_img">
+            <img src="img/p01.jpg" alt="">
+          </li>
+          <li  class="photos__list_img">
+            <img src="img/p02.jpg" alt="">
+          </li>
+          <li class="photos__list_img">
+			<img src="img/p03.jpg" alt="">
+          </li>
+          <li class="photos__list_img">
+            <img src="img/p04.jpg" alt="">
+          </li>
+          <li class="photos__list_img">
+            <img src="img/p05.jpg" alt="">
+          </li>
+          <li class="photos__list_img">
+            <img src="img/p06.jpg" alt="">
+          </li>
+          <li class="photos__list_img">
+            <img src="img/p07.jpg" alt="">
+          </li>
+          <li class="photos__list_img">
+            <img src="img/p08.jpg" alt="">
+          </li>
+        </ul>
+      </section>
+
+      <section class="info-section get-in-touch" id="touch">
+        <header>
+          <h2>和我联系</h2>
+        </header>
+        <ul class="get-in-touch__list">
+       	   <li>
+           <a href="#"> <img src="img/phone-icon.png" alt=""></a>
+            <p>Phone</p>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/paavochung" target="_blank"><img src="img/fb-icon.png" alt="" title="facebook"></a>
+            <p>Facebook</p>
+          </li>
+          <li>
+            <a href="https://mail.google.com" target="_blank"><img src="img/email-icon.png" alt="" title="zhongbohua@gmail.com"></a>
+            <p>Email</p>
+          </li>
+           <li class="wechat">
+            <a href="javascript:;"><img src="img/wechat-icon.png" alt=""></a>
+            <p>Wechat</p>
+          </li>
+
+        </ul>
+      </section>
+
+      <section class="info-section contact" id="contact">
+        <header>
+          <h2>或者...留言给我</h2>
+        </header>
+        
+        <div class="form">
+        <form action="">
+        
+          <div class="email-form-container">
+          <div class="input"><label for="name" class="outside">Name</label>
+          <input name="name" id="name" type="text"></div>
+          <div class="input"><label for="email" class="outside">Email</label>
+          <input name="email" id="email" type="email"><br /></div>
+          <div class="input"><label for="message" class="outside">Message</label>
+          <textarea name="message" id="message"></textarea></div><br />
+          <button type="submit" class="input_button">Submit</button>
+          </div>
+         
+        </form></div>
+        <div class="ft">Copyright © 2015 <a href="#" target="_blank" style=" color:#62686f">Paavo</a> 版权所有</div>
+      </section>
+
+    </div>
+
+  <!--<link href='http://fonts.useso.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,400' rel='stylesheet' type='text/css'>-->
+		
+        
+         <div id="gototop"><div class="btn"></div></div>
+
+  
+  
+  </body>
+</html>
