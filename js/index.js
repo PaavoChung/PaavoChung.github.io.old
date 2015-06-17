@@ -7,10 +7,10 @@
 			
             if($(this).scrollTop()>=num){
 				$('.main-nav').addClass('main-nav-move')	
-$('.whatido').css({"margin-top":"40px"})
+				$('.whatido').css({"margin-top":"40px"})
 			}else{
 				$('.main-nav').removeClass('main-nav-move')
-$('.whatido').css({"margin-top":"0px"})
+				$('.whatido').css({"margin-top":"0px"})	
 		
 			}
 			})
