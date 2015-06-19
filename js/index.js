@@ -7,8 +7,10 @@
 			
             if($(this).scrollTop()>=num){
 				$('.main-nav').addClass('main-nav-move')	
-			}else{
+				$('.whatido').css({"margin-top":"40px"})
+			}else{ 
 				$('.main-nav').removeClass('main-nav-move')
+				$('.whatido').css({"margin-top":"0px"})
 		
 			}
 			})
@@ -29,12 +31,60 @@
 			})
 			
 			//这是按钮提醒
-			$(function(){
+/*			$(function(){
 				$('button').click(function(e) {
                     alert('亲，暂时还没有添加这个功能，敬请期待')
                 });	
 			})
+*/			
+		
+		
+
+
+		$(function(){
+		function fn(){
 			
+				
+				/*通过加工函数做入场延时*/
+				$('.photos__list li').each(function(index, el) {
+					$(el).css({'transform': 'translateX(0px)','transition-delay':index*500+'ms'})
+				});
+			
+			
+				$('.photos__list li').hover(function(){
+					// 鼠标移上，兄弟变成半透明
+					 $(this).siblings().children().stop().fadeTo(500,0.3)
+					
+					/* $(this).stop().fadeTo(500,1).siblings().fadeTo(500,0.3)*/	
+				},function(){
+					// 鼠标离开，所有li变成不透明
+					$('.photos__list li img').stop().fadeTo(500,1)
+				})/*.click(function(){
+					$(this).children().stop().slideUp().slideDown()
+				})*/
+			
+				
+	
+			
+		
+		}		
+			var num02=$('.education-experience__title').offset().top
+			$(window).scroll(function(){
+				if($(this).scrollTop()>=num02){
+					fn();
+			}
+			})
+		
+		})
+
+		
+		
+
+				
+			
+	
+
+
 			
 			//这是返回顶部
 			$(function(){

@@ -21,6 +21,7 @@ h1,h2,h3,h4,h5,h6{ color:#333;font-weight:300;}
 border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;-o-border-radius:50%;-ms-border-radius:50%; box-shadow: 0px 0px 0px 5px rgba(255,255,255,1),0px 0px 2px 6px rgba(0,0,0,0.3);position:absolute; top:-70px; left:50%; margin-left:-65px; overflow:hidden;}
 .main-nav{ width:960px; height:40px;  margin:0 auto; background:#333; line-height:40px;}
 .main-nav-move{ position:fixed; top:0; left:50%; margin-left:-480px; z-index:999;}
+
 .main-nav ul{ width:420px;text-align:center; margin:0 auto; position:relative;}
 .main-nav ul li{ width:80px; display:inline-block;  font-size: 16px; text-align:center;}
 
@@ -49,21 +50,44 @@ border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;-o-border-rad
 .education-experience__title{ margin:16px 0; font-weight:bold;}
 .photos__list{ width:840px; height:auto;}
 .photos{overflow:hidden;}
-.photos__list li{ }
+.photos__list li{transform: translateX(-2000px); transition:transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
 .photos__list_img{box-sizing:border-box; width:25%; float:left; padding:10px;}
 .photos__list_img img{ width:100%; cursor: pointer; }
 .get-in-touch__list{ text-align:center;}
 .get-in-touch__list li{ display:inline-block; margin:0 10px;}
 .get-in-touch__list li p{ margin-top:20px;}
-
+.wechat:after{ transition:all 2s;}
 .wechat:hover:after{ content:""; display:block; width:160px; height:160px; background:url(../img/qr-code.png) no-repeat; position:absolute;}
 
-.form{ width:300px; height:360px; margin:0 auto; text-align:center; z-index:1;}
+.form{ width:300px; height:360px; margin:0 auto; text-align:center; z-index:1; /* padding: 0 0 100px 0; */}
+.input.none{ display:none;}
 .input{ margin-bottom:20px; position:relative;}
 #name,#email,#message{ width:300px; padding:10px; resize:none; border-radius:2px; border:none; border:1px solid #ccc;}
 .outside{ margin-right:20px; width:200px; position:absolute; right:100%;text-align:right; margin-top:15px;}
 .input_button{ width:300px; height:36px; border-radius:999px; border:none; background:#FF7A7C; color:#fff;}
+.ds-post-button{ width:300px; height:36px; margin:40px auto 0px; border-radius:999px; border:none; background:#FF7A7C; color:#fff;}
 .ft{ width:100%; text-align:center;}
+
+
+
+.duoshuo{ width:960px; height:auto; margin:0 auto;}
+/*doubi*/
+.ds-comments{ display:none !important;}
+.ds-comments-tabs,.ds-comments-info{ display:none !important;}
+.ds-login-buttons,.ds-avatar,.ds-post-options,.ds-toolbar-buttons,.ds-sort,.ds-powered-by{ display:none !important;}
+
+.ds-textarea-wrapper textarea{width: 278px !important; padding:10px !important; resize:none !important; border-radius:2px  !important; border:none  !important; border:1px solid #ccc  !important;}
+#contact #ds-thread.ds-narrow #ds-reset .ds-comment-body, #ds-thread.ds-narrow #ds-reset .ds-replybox,#contact #ds-thread #ds-reset .ds-replybox{ padding:0 ;}
+#contact #ds-thread #ds-reset .ds-textarea-wrapper textarea{ height:100px; max-height:100px ;resize: none !important; }
+#contact  #ds-thread #ds-reset .ds-textarea-wrapper{ background:none;}
+#contact #ds-thread.ds-narrow #ds-reset .ds-post-button{ content:"Submit"; margin: 40px auto 0;  width: 300px;  height: 36px;  border-radius: 999px;  border: none;  background: #FF7A7C;  color: #fff;}
+#contact .ds-meta{ display:none;}
+#contact .ds-toolbar{ display:none;}
+#contact  #ds-thread #ds-reset .ds-post-button{ position:static !important;}
+#contact #ds-thread #ds-reset .ds-post-toolbar{text-align:center}
+/*doubi*/
+
+
 
 /*返回顶部*/
 	
@@ -112,12 +136,13 @@ border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;-o-border-rad
 		.education-experience__list li img{display:block; float:none; margin:0px auto;}
 		.education-experience__list__description{ width:100%; padding:20px 0; margin:0;}
 		.photos{ height:auto;}
-		.photos__list{ width:auto; height:auto;overflow:hidden; }
-		.photos__list li{width:100%; }
-		.photos__list_img{ width:100%;}
+		.photos__list{ width:100%; height:auto;overflow:hidden; }
+		.photos__list_img{width:50%; }
+		.photos__list_img img{max-width:100%;height:auto;}
 		.get-in-touch__list li{ margin:0; padding:10px 0;}
 		.get-in-touch__list .wechat img{content:url(../img/qr-code.png)}
 		.wechat:hover:after{ display:none;}
 		.outside{ position:static;}
+		.ds-post-button{ width:250px !important;}
 		#name, #email, #message,.input_button,.form{ width:260px;}
 		}
