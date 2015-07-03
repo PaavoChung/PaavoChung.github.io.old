@@ -47,22 +47,34 @@
 				
 				/*通过加工函数做入场延时*/
 				$('.photos__list li').each(function(index, el) {
+					$(el).css({'-ms-transform': 'translateX(0px)','-ms-transition-delay':index*500+'ms'})
+					$(el).css({'-o-transform': 'translateX(0px)','-o-transition-delay':index*500+'ms'})
+					$(el).css({'-moz-transform': 'translateX(0px)','-moz-transition-delay':index*500+'ms'})
+					$(el).css({'-webkit-transform': 'translateX(0px)','-webkit-transition-delay':index*500+'ms'})
 					$(el).css({'transform': 'translateX(0px)','transition-delay':index*500+'ms'})
 				});
-			
-			
-				$('.photos__list li').hover(function(){
-					// 鼠标移上，兄弟变成半透明
-					 $(this).siblings().children().stop().fadeTo(500,0.3)
-					
-					/* $(this).stop().fadeTo(500,1).siblings().fadeTo(500,0.3)*/	
+				
+				
+					$('.box_img.magictime').hover(function(e) {
+					$(this).addClass('rotateRight')
 				},function(){
-					// 鼠标离开，所有li变成不透明
-					$('.photos__list li img').stop().fadeTo(500,1)
-				})/*.click(function(){
-					$(this).children().stop().slideUp().slideDown()
-				})*/
+					$(this).removeClass('rotateRight')
+				});
+	
+
 			
+				//$('.photos__list li').hover(function(){
+//					// 鼠标移上，兄弟变成半透明
+//					 $(this).siblings().children().stop().fadeTo(500,0.3)
+//					
+//					/* $(this).stop().fadeTo(500,1).siblings().fadeTo(500,0.3)*/	
+//				},function(){
+//					// 鼠标离开，所有li变成不透明
+//					$('.photos__list li img').stop().fadeTo(500,1)
+//				})/*.click(function(){
+//					$(this).children().stop().slideUp().slideDown()
+//				})*/
+//			
 				
 	
 			

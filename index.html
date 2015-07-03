@@ -16,7 +16,7 @@ See: http://www.sitepoint.com/web-foundations/doctypes/
     <!--
     Disables zooming on mobile devices.在移动设备上禁止缩放
     -->
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,user-scalable=no">
 
     <!--
     Stylesheet that minimizes browser differences. normalize样式表
@@ -110,28 +110,92 @@ See: http://www.sitepoint.com/web-foundations/doctypes/
         </header>
         <ul class="photos__list">
           <li  class="photos__list_img">
-            <img src="img/p01.jpg" alt="">
+               <a href="02-盒子居中.html" target="_blank">
+                     <div class="box_con">
+                            <div class="box_box">
+                                <span>这是一个test</span>
+                                <span>我是测试文字</span>
+                            </div>
+                      </div>
+                     <div class="box_img magictime"><img src="img/p01.jpg" alt=""></div>
+                </a>
           </li>
           <li  class="photos__list_img">
-            <img src="img/p02.jpg" alt="">
+               <a href="02-盒子居中.html" target="_blank">
+                     <div class="box_con">
+                            <div class="box_box">
+                                <span>这是一个test</span>
+                                <span>我是测试文字</span>
+                            </div>
+                      </div>
+                     <div class="box_img magictime"><img src="img/p02.jpg" alt=""></div>
+                </a>
           </li>
           <li class="photos__list_img">
-			<img src="img/p03.jpg" alt="">
+               <a href="02-盒子居中.html" target="_blank">
+                     <div class="box_con">
+                            <div class="box_box">
+                                <span>这是一个test</span>
+                                <span>我是测试文字</span>
+                            </div>
+                      </div>
+                     <div class="box_img magictime"><img src="img/p03.jpg" alt=""></div>
+                </a>
           </li>
           <li class="photos__list_img">
-            <img src="img/p04.jpg" alt="">
+               <a href="02-盒子居中.html" target="_blank">
+                     <div class="box_con">
+                            <div class="box_box">
+                                <span>这是一个test</span>
+                                <span>我是测试文字</span>
+                            </div>
+                      </div>
+                     <div class="box_img magictime"><img src="img/p04.jpg" alt=""></div>
+                </a>
           </li>
           <li class="photos__list_img">
-            <img src="img/p05.jpg" alt="">
+               <a href="02-盒子居中.html" target="_blank">
+                     <div class="box_con">
+                            <div class="box_box">
+                                <span>这是一个test</span>
+                                <span>我是测试文字</span>
+                            </div>
+                      </div>
+                     <div class="box_img magictime"><img src="img/p05.jpg" alt=""></div>
+                </a>
           </li>
           <li class="photos__list_img">
-            <img src="img/p06.jpg" alt="">
+               <a href="02-盒子居中.html" target="_blank">
+                     <div class="box_con">
+                            <div class="box_box">
+                                <span>这是一个test</span>
+                                <span>我是测试文字</span>
+                            </div>
+                      </div>
+                     <div class="box_img magictime"><img src="img/p06.jpg" alt=""></div>
+                </a>
           </li>
           <li class="photos__list_img">
-            <img src="img/p07.jpg" alt="">
+               <a href="02-盒子居中.html" target="_blank">
+                     <div class="box_con">
+                            <div class="box_box">
+                                <span>这是一个test</span>
+                                <span>我是测试文字</span>
+                            </div>
+                      </div>
+                     <div class="box_img magictime"><img src="img/p07.jpg" alt=""></div>
+                </a>
           </li>
           <li class="photos__list_img">
-            <img src="img/p08.jpg" alt="">
+               <a href="02-盒子居中.html" target="_blank">
+                     <div class="box_con">
+                            <div class="box_box">
+                                <span>这是一个test</span>
+                                <span>我是测试文字</span>
+                            </div>
+                      </div>
+                     <div class="box_img magictime"><img src="img/p08.jpg" alt=""></div>
+                </a>
           </li>
         </ul>
       </section>
@@ -169,19 +233,17 @@ See: http://www.sitepoint.com/web-foundations/doctypes/
         <div class="form">
         <form action="">
         
-          <div class="email-form-container">
+<!--          <div class="email-form-container">
           <div class="input none"><label for="name" class="outside">Name</label>
           <input name="name" id="name" type="text"></div>
           <div class="input none"><label for="email" class="outside">Email</label>
           <input name="email" id="email" type="email"><br /></div>
 
-          <div class="input"><label for="message" class="outside">Message:</label>
-                       <!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="paavo" data-title="paavo" data-url="http://zhongbohua.com/"></div>
-<!-- 多说评论框 end --></div><br />
-          <!--<button type="submit" class="input_button">Submit</button>-->
+-->          <div class="input"><label for="message" class="outside">Message:</label>
+         <!-- <button type="submit" class="input_button">Submit</button>-->
           </div>
-         
+      	  <div id="SOHUCS"></div> 
+
         </form></div>
 
         <div class="ft">Copyright © 2015 <a href="#" target="_blank" style=" color:#62686f">Paavo</a> 版权所有</div>
@@ -197,27 +259,21 @@ See: http://www.sitepoint.com/web-foundations/doctypes/
 
   
   
-	<div class="duoshuo">
     
-
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-		<script type="text/javascript">
-        var duoshuoQuery = {short_name:"paavo"};
-            (function() {
-                var ds = document.createElement('script');
-                ds.type = 'text/javascript';ds.async = true;
-                ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-                ds.charset = 'UTF-8';
-                (document.getElementsByTagName('head')[0] 
-                 || document.getElementsByTagName('body')[0]).appendChild(ds);
-            })();
-            </script>
-<!-- 多说公共JS代码 end -->
-
+        <script type="text/javascript"> 
+        (function(){ 
+        var appid = 'cyrR32Ed5'; 
+        var conf = '9fa1cc1d08664282f1c1368da46ed4cb'; 
+        if (window.screen.width < 960) { 
+        window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); 
+        } else { 
+        var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("http://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); 
+        } 
+        })(); 
+        </script>
 
     
     
-    </div>  
   
   
   
