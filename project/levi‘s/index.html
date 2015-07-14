@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>levi's</title>
+<link rel="stylesheet" type="text/css" href="style/cssreset.css">
+<link rel="stylesheet" type="text/css" href="style/style.css">
+<script src="js/jquery-1.7.2.min.js"></script>
+<script>
+        $(function () {
+            var myindex=1;      //定义默认的纵轴为1
+            var num=0
+            $('.circle span').mouseenter(function () {     //鼠标进去（enter）的方法
+                myindex++       //设置每进去一次就+1
+                $(this).addClass('on').siblings().removeClass()        //当前鼠标指的那个类，更改类名为on，其他兄弟就删除类名
+                var index=$(this).index()       //赋值当前鼠标上面的索引值为动态值：index
+                $('.banner ul li').eq(index).fadeIn().siblings().stop().fadeOut(800)
+                num=index;      //这个num等于index是为了鼠标移上去的那个图片的时候，确保鼠标离开之后能切换接下来的一张图片
+            })
+
+
+        
+
+            //自动运行模块
+            var timer=null;     //定时器
+            var speed= 2000;    //时间（2000毫秒）
+            function autorun(){ //自动滚动的方法
+                num++       //还是要自动 + 1
+                myindex++   //这个也要自动 + 1 ，不然图片的序号显示不出来
+                if(num>2){num=0}    //判断当前的索引值是不是大于4，是就自动归零
+                $('.circle span').eq(num).addClass('on').siblings().removeClass()     //这个li，获取当前的索引值，更改类名为on，其兄弟就删除类名。
+                $('.banner ul li').eq(num).fadeIn().siblings().stop().fadeOut(800)
+            }
+
+            timer=setInterval(autorun,speed)    //定时器运行 autorun为上面的定时器的函数方法名
+            $('.banner').hover(function () {    //鼠标经过的时候
+                clearInterval(timer)    //清除定时器
+                $('.banner span').stop().fadeIn(500)
+            }, function () {        //鼠标离开的时候
+                clearInterval(timer)    //再清除一次定时器，防止出现问题
+                $('.banner span').stop().fadeOut(500)
+                timer=setInterval(autorun,speed)    //再运行一次定时器
+            })
+
+
+        })        </script>
+</head>
+<header>
+   	  <div class="header_con">
+        <h1></h1>
+        <div class="input01"><input type="text"></div>
+        <span><img src="img/$300.png" alt=""></span>
+  </div>
+    </header>
+    <nav>
+      <div class="nav_con">
+            <ul>
+                <li>Home</li>
+                <li>Sale</li>
+                <li>Handbags</li>
+                <li>Mens Store</li>
+                <li>Shoes</li>
+                <li>Services</li>
+                <li>Contact us</li>
+            </ul>
+        </div>
+    </nav>
+<section class="banner">
+	<ul class="banner_all">
+		<li class="banner_one">
+        	<div class="banner_one_img"><img src="img/layer-1.png" width="278" height="334" alt=""/></div>
+            <div class="banner_one_wenzi">
+            	<h2>COWHIDE <br>STANDARD CR</h2>
+                <p>White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit. </p>
+                <a href="#">SHOP NOW</a>
+            </div>
+        </li>
+		<li class="banner_two">
+        	<div class="banner_one_img"><img src="img/layer-5.png" width="278" height="334" alt=""/></div>
+        	 <div class="banner_one_wenzi">
+            	<h2>COWHIDE <br>STANDARD CR</h2>
+                <p>White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit. </p>
+                <a href="#">SHOP NOW</a>
+        </li>
+		<li class="banner_three">
+        	<div class="banner_one_img"><img src="img/layer-8.png" width="278" height="334" alt=""/></div>
+        	 <div class="banner_one_wenzi">
+            	<h2>COWHIDE <br>STANDARD CR</h2>
+                <p>White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit. </p>
+                <a href="#">SHOP NOW</a>
+        </li>
+	</ul>
+    <div class="circle">
+    	<span class="on">&nbsp;</span>
+        <span class="">&nbsp;</span>
+        <span class="">&nbsp;</span>
+    </div>
+    
+</section>
+<section class="little_banner"></section>
+<section class="goods_show">
+	<span>FEATURED PRODUCTS</span>
+
+
+  <div class="goods_show_con">
+        <ul>
+            <li class="goods_show_con_img"><div class="tu"><img src="img/layer-7.png" width="189" height="126" alt=""/>
+            <div class="tu_con"><p>BRANDED SHOE</p><span>$300</span><button>BUY NOW</button></div></div></li>
+            <li class="goods_show_con_img"><div class="tu"><img src="img/layer-8.png" width="116" height="116" alt=""/>
+            <div class="tu_con"><p>BRANDED SHOE</p><span>$300</span><button>BUY NOW</button></div></div></li>
+            <li class="goods_show_con_img"><div class="tu"><img src="img/layer-9.png" width="105" height="118" alt=""/>
+            <div class="tu_con"><p>BRANDED SHOE</p><span>$300</span><button>BUY NOW</button></div></div></li>
+            <li class="goods_show_con_img"><div class="tu"><img src="img/layer-10.png" width="175" height="131" alt=""/>
+            <div class="tu_con"><p>BRANDED SHOE</p><span>$300</span><button>BUY NOW</button></div></div></li>
+            <li class="goods_show_con_img"><div class="tu"><img src="img/layer-11.png" width="140" height="126" alt=""/>
+            <div class="tu_con"><p>BRANDED SHOE</p><span>$300</span><button>BUY NOW</button></div></div></li>
+            <li class="goods_show_con_img"><div class="tu"><img src="img/layer-12.png" width="66" height="119" alt=""/>
+            <div class="tu_con"><p>BRANDED SHOE</p><span>$300</span><button>BUY NOW</button></div></div></li>
+        </ul>
+        
+  </div>
+</section>
+    <section class="serve">
+    	<div>
+        	<span>FEATURED SALE</span>
+        	<ul>
+                <li>Alexis Hudson</li>
+                <li>American Apparel</li>
+                <li>Ben Sherman</li>
+                <li>Big Buddha</li>
+                <li>Chanel</li>
+                <li>Christian Audigier</li>
+                <li>Coach</li>
+                <li>Cole Haan</li>
+        	</ul>
+        </div>
+    	<div>
+        	<span>MENS STORE</span>
+        	<ul>
+                <li>Alexis Hudson</li>
+                <li>American Apparel</li>
+                <li>Ben Sherman</li>
+                <li>Big Buddha</li>
+                <li>Chanel</li>
+                <li>Christian Audigier</li>
+                <li>Coach</li>
+                <li>Cole Haan</li>
+        	</ul>
+        </div>
+    	<div>
+        	<span>WOMEN STORE</span>
+        	<ul>
+                <li>Alexis Hudson</li>
+                <li>American Apparel</li>
+                <li>Ben Sherman</li>
+                <li>Big Buddha</li>
+                <li>Chanel</li>
+                <li>Christian Audigier</li>
+                <li>Coach</li>
+                <li>Cole Haan</li>
+        	</ul>
+        </div>
+    	<div>
+        	<span>QUICK LINKS</span>
+        	<ul>
+                <li>Alexis Hudson</li>
+                <li>American Apparel</li>
+                <li>Ben Sherman</li>
+                <li>Big Buddha</li>
+                <li>Chanel</li>
+                <li>Christian Audigier</li>
+                <li>Coach</li>
+                <li>Cole Haan</li>
+        	</ul>
+        </div>
+    </section>
+    <footer>
+    <p>Copyright © 2015 Paavo</p>
+    </footer>
+<body>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>携程</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css"/>
+    <script src="js/TouchSlide.1.1.js"></script>
+</head>
+<body>
+    <header class="index-header">
+        <div>搜索目的地/景点/酒店/关键字/航班号</div>
+        <a href="#"></a>
+    </header>
+<section class="banner">
+    <div id="focus" class="focus">
+        <div class="hd">
+            <ul></ul>
+        </div>
+        <div class="bd">
+            <ul>
+                <li><a href="#"><img src="img/1.jpg" /></a></li>
+                <li><a href="#"><img src="img/2.png" /></a></li>
+                <li><a href="#"><img src="img/3.jpg" /></a></li>
+                <li><a href="#"><img src="img/4.png" /></a></li>
+                <li><a href="#"><img src="img/5.png" /></a></li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        TouchSlide({
+            slideCell:"#focus",
+            titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+            mainCell:".bd ul",
+            effect:"leftLoop",
+            autoPlay:true,//自动播放
+            autoPage:true //自动分页
+        });
+    </script>
+</section>
+
+<nav class="index-nav">
+    <ul class="hotel">
+        <li>酒 店</li>
+        <li>海外酒店</li>
+        <li>团购·特惠</li>
+        <li>周边酒店</li>
+        <li>客栈·公寓</li>
+    </ul>
+    <ul class="ticket">
+        <li>机 票</li>
+        <li>火车票</li>
+        <li>汽车票</li>
+        <li>接送机</li>
+        <li>自驾·专车</li>
+    </ul>
+    <ul class="tour">
+        <li>旅 游<p>暑假超优惠</p></li>
+        <li>门票·玩乐</li>
+        <li>邮 轮</li>
+        <li>出境WiFi</li>
+        <li>签 证</li>
+    </ul>
+    <ul class="strategy">
+        <li>攻 略</li>
+        <li>周末游</li>
+        <li>美食·购物</li>
+        <li>礼品卡</li>
+        <li>更多</li>
+    </ul>
+
+</nav>
+    <figure class="footer-focus">
+        <ul>
+            <li><img src="img/zzz_pic_salead01.png" alt="" /></li>
+            <li><img src="img/zzz_pic_salead01.png" alt="" /></li>
+        </ul>
+    </figure>
+
+    <footer class="index-footer">
+        <ul>
+            <li>电话预订</li>
+            <li>下载客户端</li>
+            <li>意见反馈</li>
+        </ul>
+        <p>
+            <a href="#">网站地图</a>|
+            <a href="#">ENGLISH</a>|
+            <a href="#">电脑版</a>
+        </p>
+        <p>©2015携程旅行</p>
+
+    </footer>
+
+</body>
+</html>

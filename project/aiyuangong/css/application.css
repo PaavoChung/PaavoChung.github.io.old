@@ -1,0 +1,42 @@
+@charset "utf-8"; /* CSS Document */ 
+
+.app_content{ width:1000px; height:2100px; margin:90px auto 0px; }
+.col-md-12{ width:100%; position: relative; min-height: 1px; padding-left: 15px; padding-right: 15px;} 
+.personnel{ background:url(../img/label.png) no-repeat;} 
+.app-title{  clear: both; font-size: 20px; color: #64625F; height: 44px; line-height: 44px; margin-top: 20px; margin-bottom: 20px; padding-left: 35px; text-align: center; width: 151px;}
+.columns{width: 220px; display: inline; float: left; margin-left: 28px; margin-bottom: 30px; font: inherit; padding: 0; vertical-align: baseline; border: 1px solid #e4e4e4; border-radius: 10px;}
+.portfolio-item{  background: none repeat scroll 0 0 #fff;float: left; height: 88px; margin-bottom: 10px; opacity: 0.8; text-align: center; transition: opacity 0.4s ease 0s, border 0.4s ease 0s; padding-bottom: 14px; color: #1b95cd; outline: 0 none; text-decoration: none; font: inherit; vertical-align: baseline;}
+.app_icon_on{background: url(../img/app_icon2.png) no-repeat; height: 60px; width: 60px; float: left; margin-top: 15px; margin-left: 20px;}
+.app_title{font-size: 20px; line-height: 44px; margin-top: 25px; margin-left: 100px; color: #64625F;}
+.columns a{  float: left; margin-left: 25px; margin-bottom: 15px; color: #64625F;} 
+.need_info{padding-left: 20px; background:url(../img/icon_3.png) -20px 0px no-repeat;} 
+.need_info1{padding-left: 20px; background: url(../img/icon_3.png) -40px -3px no-repeat; }
+.app_icon1, .app_icon2, .app_icon3, .app_icon4, .app_icon5, .app_icon6, .app_icon7, .app_icon8, .app_icon9, .app_icon10, .app_icon11, .app_icon12, .app_icon13, .app_icon14, .app_icon15, .app_icon16, .app_icon17, .app_icon18, .app_icon19, .app_icon20, .app_icon21{ height: 60px; width: 60px; float: left; margin-top: 15px; margin-left: 20px;}
+
+.app_icon1{background: url(../img/app_icon.png) -60px 0px no-repeat;}
+.app_icon2{background: url(../img/app_icon.png) -120px 0px no-repeat;}
+.app_icon3{background: url(../img/app_icon.png) -180px 0px no-repeat;}
+.app_icon4{background: url(../img/app_icon.png) -240px 0px no-repeat; } 
+.app_icon5{background: url(../img/app_icon.png) -300px 0px no-repeat;}
+.app_icon6{background: url(../img/app_icon.png) -360px 0px no-repeat;}
+.app_icon7{background: url(../img/app_icon.png) -420px 0px no-repeat; }
+.app_icon8{background: url(../img/app_icon.png) -480px 0px no-repeat;} 
+.app_icon9 { background: url(../img/app_icon.png) -540px 0px no-repeat; } 
+.app_icon10 { background: url(../img/app_icon.png) -600px 0px no-repeat;  } 
+.app_icon11 { background: url(../img/app_icon.png) 0px -60px no-repeat; }
+.app_icon12 { background: url(../img/app_icon.png) -60px -60px no-repeat; } 
+.app_icon13 { background: url(../img/app_icon.png) -120px -60px no-repeat;  } 
+.app_icon14 { background: url(../img/app_icon.png) -180px -60px no-repeat; }
+.app_icon15 { background: url(../img/app_icon.png) -240px -60px no-repeat; }
+.app_icon16 { background: url(../img/app_icon.png) -300px -60px no-repeat;}
+.app_icon17 { background: url(../img/app_icon.png) -360px -60px no-repeat; }
+.app_icon18 { background: url(../img/app_icon.png) -420px -60px no-repeat; }
+.app_icon19 { background: url(../img/app_icon.png) -480px -60px no-repeat; }
+.app_icon20 { background: url(../img/app_icon.png) -540px -60px no-repeat;  }
+.app_icon21 { background: url(../img/app_icon.png) -600px -60px no-repeat;}
+.recruit{  background: url(../img/label.png) 0px -44px no-repeat;}
+.train { background: url(../img/label.png) 0px -88px no-repeat; }
+.culture { background: url(../img/label.png) 0px -132px no-repeat; }
+.performance { background: url(../img/label.png) 0px -176px no-repeat; }
+.welfare { background: url(../img/label.png) 0px -220px no-repeat; }
+.time { background: url(../img/label.png) 0px -264px no-repeat;

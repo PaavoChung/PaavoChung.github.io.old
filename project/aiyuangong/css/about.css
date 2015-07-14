@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.site-header{position: fixed;top: 0;display: block;padding: 15px 0; width: 100%; background-color: white;border-bottom: 2px solid #f3f3f3; z-index: 9991;background: none repeat scroll 0 0 rgba(231, 90, 101, 0.8);}
+.nav_main li a{ color:#fff;}
+.logo{ width:80px; height:50px; background:url(../img/logo_about.png) no-repeat;float:left;}
+.about_content{ width:1000px; height:auto; margin:80px auto 0; padding-top:30px; color:#232323;}
+.about_content h2{ font-size:24px; margin-top:20px; color:#FF6668;}
+.about_content p{ font-size:16px; line-height:22px; margin-top:10px;}

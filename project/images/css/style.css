@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0; padding:0; list-style:none;}
+body{ width:100%; height:auto; font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;}
+nav{ width:100%; height:58px; background:rgba(255,255,255,.4); position:fixed;}
+.nav_con{ width:80%; height:58px; margin:0 auto; line-height:58px;}
+.nav_con h1{ display:inline-block; width:181px; height:28px; margin-top:14px; background:url(../img/logo.png) no-repeat; float:left;}
+.nav_con span{ display:inline-block; width:60px; height:58px; background: rgba(255,255,255,.4) url(../img/shape-2.png) no-repeat center center; float:right; cursor:pointer;}
+
+.top_con{ width:100%; height:484px; background:url(../img/layer-2.png) no-repeat center center; background-size:cover; position:relative;}
+.top_con .top_con_wen,.top_con input{ position:absolute;}
+.top_con .top_con_wen{ left:20%; top:40%; font-size:28px; color:#fff;}
+.top_con input{ width:400px; height:42px; left:20%; bottom:30%; font-size:16px; color:#BCBCBC; border:none; background:#fff url(../img/shape-7.png) no-repeat; padding:0 10px; background-position: 98% 10px}
+
+.free{ width:100%; height:110px; border-bottom:1px solid #ccc; background:#fff; text-align:center;}
+.free span{ display:inline-block; height:110px; line-height:110px; font-size:34px; color:#8b8b8b; font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;} 
+.free button{ width:256px; height:62px; background:#8fcddc; color:#fff; border:none; margin-left:40px;font-size:34px; cursor:pointer;}
+
+.serve{ width:100%; height:300px; margin:0 auto; color:#afafaf; font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.serve span{ display:block; width:100%; text-align:center; margin:20px 0; color:#636363; font-size:20px;}
+.serve_con{ width:80%; height:auto; display:flex; margin:0 auto;}
+.serve_con ul li{ margin-bottom:12px;}
+.serve div{ flex:1;}
+footer{ width:100%; height:50px; background:#484242; text-align:center; line-height:50px; color:#fff;}

@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;list-style:none;}
+a{ text-decoration:none; color:#fff;}
+body{ font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;}
+header{ width:100%; height:46px;  background:#242424;}
+.header_con{ width:80%; height:100%;max-width:1440px; min-width:620px; margin:0 auto; line-height:100%;}
+.header_con h1{ display:inline-block; width:156px; height:20px; background:url(../img/yourlogo.png) no-repeat; float:left; margin-top:12px;}
+.header_con .login{ display:inline-block; width:auto; padding:0 6px; height:46px; line-height:46px; float:right; border-left:1px solid #383838;border-right:1px solid #383838; color:#7e7e7e; font-weight:bold;}
+.header_con .search{ display:inline-block; width:14px; height:14px; background:url(../img/search-icon.png) no-repeat;cursor:pointer; float:right; margin-right:20px; margin-top:15px;}
+
+nav{ width:100%; height:auto;}
+.nav_con{ width:80%; height:60px; max-width:1440px; min-width:620px; margin:0 auto;}
+.nav_left{ width:70%; height:100%; float:left;}
+.nav_left ul li{ width:80px; height:60px; float:left; line-height:60px; font-weight:bold;}
+
+.nav_right div{ width:90px; height:60px; border-left:1px solid #383838;border-right:1px solid #383838; float:right; line-height:60px; text-align:center;}
+.nav_right .shopping{ margin-left:-1px;}
+
+
+
+.banner{ width:100%; height:460px; background:#eeebe6 url(../img/img.png) no-repeat center center; position: relative; color: #242424;}
+.banner p{position: absolute;left: 50%;top: 25%; font-size: 35px;}
+.banner span{ display: block; width: 400px;position: absolute;left: 50%;top: 35%; font-size: 20px;}
+.shop_by{ width:100%; height:90px; background:#2e2e2e;}
+.shop_by_con{ width:80%; height:100%; max-width:1440px; min-width:620px; margin:0 auto;box-sizing:border-box;}
+.shop_by_con span{ display:inline-block; width:23%; height:60px; background:#242424; text-align:center; line-height:60px; box-sizing:border-box; margin-left:1%; float:right; margin-top:15px; color:#fff; position:relative;}
+.shop_by_con span:after{ content:"";width:14px; height:14px; background:url(../img/shape.png) no-repeat; position:absolute; right:20px;top:50%; margin-top:-7px;}
+.shop_by_con span:nth-of-type(4){ background:none;}
+.shop_by_con span:nth-of-type(4):after{ display:none;}
+.shop_by_con span:hover ul{ display:block;}
+.shop_by_con span ul{ display:none;}
+.shop_by_con span li{ width:100%; height:60px; background:#242424;}
+
+
+.shoes_show_con{ width:80%; height:1000px; margin:0 auto;}
+.shoes_show_con_nav{}
+
+
+
+
+
+
